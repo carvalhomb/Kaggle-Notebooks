@@ -175,7 +175,8 @@ class FeatureImportance:
                 if len(discarded_features) > 0:
                     print('\n\tdiscarded_features:\n\n', discarded_features)
 
-
+            names = kept_features
+            
         return names
 
     def _get_feature_names_from_pipeline(self, transformer, transformer_name, orig_feature_names):
